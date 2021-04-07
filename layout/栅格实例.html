@@ -1,0 +1,102 @@
+<!--
+ * @Author: Gatsby
+ * @Date: 2021-04-07 11:07:07
+ * @LastEditTime: 2021-04-07 16:10:28
+ * @LastEditors: Gatsby
+ * @Description: 
+ * @FilePath: \Bootstrap\layout\栅格实例.html
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/thirdDependence/bootstrap.min.css">
+    <script src="../javascript/thirdDependence/jquery.min.js"></script>
+    <script src="../javascript/thirdDependence/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h1>Hello, world!</h1>
+                <p>...</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+            </div>
+
+            <!-- 包含列排序、列偏移 （ col-lg-push...   col-lg-pull...） -->
+            <div class="col-lg-3 col-lg-push-9 col-sm-6 col-md-4 col-md-push-8 col-sm-push-6">
+                <div class="thumbnail">
+                    <img src="../img/lesscss.png" alt="...">
+                    <div class="caption">
+                        <h3 class="text-center">LESS</h3>
+                        <!-- 通过 "文本" 对齐类，可以简单方便的将文字重新对齐。 
+                        因为是是文本对齐类，对文本生效，所以设置 P 标签为父元素并设置 text-center 类 -->
+                        <p class="text-center"><a href="javascript:;">一种动态样式语言</a></p>
+                        <p>LESS 为 CSS 赋予了动态语言的特性，如变量、继承、运算、函数。LESS 既可以在客户端上运行 (支持 IE 6+、Webkit、Firefox)，也可以借助 Node.js 或者
+                            Rhino 在服务端运行。</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- col-lg-...   col-md-...   col-sm-...  需要根据顺序写，不能跳过， col-md-pull-0 相当于 auto-->
+            <div class="col-lg-3 col-lg-push-3 col-sm-6 col-md-4 col-md-pull-0 col-sm-pull-6">
+                <div class="thumbnail">
+                    <img src="../img/eslint.png" alt="...">
+                    <div class="caption">
+                        <h3 class="text-center">LESS</h3>
+                        <!-- 通过 "文本" 对齐类，可以简单方便的将文字重新对齐。 
+                        因为是是文本对齐类，对文本生效，所以设置 P 标签为父元素并设置 text-center 类 -->
+                        <p class="text-center"><a href="javascript:;">一种动态样式语言</a></p>
+                        <p>LESS 为 CSS 赋予了动态语言的特性，如变量、继承、运算、函数。LESS 既可以在客户端上运行 (支持 IE 6+、Webkit、Firefox)，也可以借助 Node.js 或者
+                            Rhino 在服务端运行。</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-lg-pull-3 col-sm-6 col-md-4 col-md-pull-8 ">
+                <div class="thumbnail">
+                    <img src="../img/nodejs.png" alt="...">
+                    <div class="caption">
+                        <h3 class="text-center">LESS</h3>
+                        <!-- 通过 "文本" 对齐类，可以简单方便的将文字重新对齐。 
+                        因为是是文本对齐类，对文本生效，所以设置 P 标签为父元素并设置 text-center 类 -->
+                        <p class="text-center"><a href="javascript:;">一种动态样式语言</a></p>
+                        <p>LESS 为 CSS 赋予了动态语言的特性，如变量、继承、运算、函数。LESS 既可以在客户端上运行 (支持 IE 6+、Webkit、Firefox)，也可以借助 Node.js 或者
+                            Rhino 在服务端运行。</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-lg-pull-9 col-sm-6 col-md-4 ">
+                <div class="thumbnail">
+                    <img src="../img/vuejs.png" alt="...">
+                    <div class="caption">
+                        <h3 class="text-center">LESS</h3>
+                        <!-- 通过 "文本" 对齐类，可以简单方便的将文字重新对齐。 
+                        因为是是文本对齐类，对文本生效，所以设置 P 标签为父元素并设置 text-center 类 -->
+                        <p class="text-center"><a href="javascript:;">一种动态样式语言</a></p>
+                        <p>LESS 为 CSS 赋予了动态语言的特性，如变量、继承、运算、函数。LESS 既可以在客户端上运行 (支持 IE 6+、Webkit、Firefox)，也可以借助 Node.js 或者
+                            Rhino 在服务端运行。</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
