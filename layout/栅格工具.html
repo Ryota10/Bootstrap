@@ -1,0 +1,52 @@
+<!--
+ * @Author: Gatsby
+ * @Date: 2021-04-08 09:35:42
+ * @LastEditTime: 2021-04-08 10:08:41
+ * @LastEditors: Gatsby
+ * @Description: 
+ * @FilePath: \Bootstrap\layout\栅格工具.html
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/thirdDependence/bootstrap.min.css">
+    <script src="../javascript/thirdDependence/jquery.min.js"></script>
+    <script src="../javascript/thirdDependence/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .hidden-xs {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- less 中不能继承混合， 只能继承类 -->
+    <div class="container">
+        <!-- width 小于 768px 时可见 -->
+        <div class="jumbotron visible-xs">
+            <h1>Hello, world!</h1>
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+
+        <!-- width 大于等于 768px 时可见 -->
+        <div class="jumbotron hidden-xs">
+            <h1>Hello, world! Second</h1>
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+
+    <!--CSS 中的 box-sizing 属性定义了 user agent 应该如何计算一个元素的总宽度和总高度; 
+        设置 box-sizing 样式，区分 border-box 与 content-box 区别 -->
+    <div style="width: 100px; box-sizing: border-box; border: 10px solid; padding: 15px;">
+    </div>
+</body>
+
+</html>
