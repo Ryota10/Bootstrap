@@ -1,0 +1,53 @@
+.setHeight.self-carousel {
+  height: 600px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .setHeight.self-carousel {
+    height: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+}
+.setHeight.self-carousel div.carousel-inner div.item {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .setHeight.self-carousel div.carousel-inner div.item {
+    height: 200px;
+  }
+}
+.setHeight.self-carousel div.carousel-inner div.item img {
+  width: 100%;
+}
+.setHeight.self-carousel div.carousel-inner div.item div.carousel-caption {
+  bottom: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .setHeight.self-carousel div.carousel-inner div.item div.carousel-caption {
+    bottom: 5%;
+  }
+}
+.setHeight.self-carousel div.carousel-inner div.item:nth-child(2) {
+  width: 100%;
+}
+.setHeight.self-carousel div.carousel-inner div.item:nth-child(2) div.carousel-caption {
+  bottom: 45%;
+}
+@media only screen and (max-width: 768px) {
+  .setHeight.self-carousel div.carousel-inner div.item:nth-child(2) div.carousel-caption {
+    bottom: 5%;
+  }
+}
+div.container.main-content-container {
+  margin-top: 2%;
+  text-align: center;
+}
+div.container.main-content-container div.row div.col-lg-4.col-md-4.col-sm-4.self-thumbnail img {
+  width: auto;
+  height: auto;
+}
+div.container.hr-container {
+  margin-top: 1%;
+}

@@ -1,0 +1,94 @@
+.setHeight.self-carousel {
+    height: 600px;
+    margin-top: 50px;
+    overflow: hidden;
+
+    @media only screen and (max-width: 768px) {
+        height: 100%;
+        margin-top: 50px;
+        overflow: hidden;
+
+    }
+
+    ol.carousel-indicators {
+        li.active {}
+
+        li {}
+    }
+
+    div.carousel-inner {
+        div.item {
+            width: 100%;
+
+            @media only screen and (max-width: 768px) {
+                height: 200px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            div.carousel-caption {
+                bottom: 50%;
+
+                @media only screen and (max-width: 768px) {
+                    bottom: 5%;
+                }
+
+                h2 {}
+            }
+        }
+
+        div.item:nth-child(2) {
+            width: 100%;
+
+            div.carousel-caption {
+                bottom: 45%;
+
+                @media only screen and (max-width: 768px) {
+                    bottom: 5%;
+                }
+
+                h2 {}
+            }
+        }
+
+    }
+
+    a.left.carousel-control {
+        span.glyphicon.glyphicon-chevron-left {}
+
+        span.sr-only {}
+    }
+
+    a.right.carousel-control {
+        span.glyphicon.glyphicon-chevron-right {}
+
+        span.sr-only {}
+    }
+}
+
+div.container.main-content-container {
+    margin-top: 2%;
+    text-align: center;
+
+    div.row {
+        div.col-lg-4.col-md-4.col-sm-4.self-thumbnail {
+            img {
+                width: auto;
+                height: auto;
+            }
+
+            div.caption {
+                h3 {}
+
+                p {}
+            }
+        }
+    }
+}
+
+div.container.hr-container {
+    margin-top: 1%;
+    hr {}
+}

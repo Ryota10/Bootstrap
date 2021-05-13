@@ -1,7 +1,7 @@
 <!--
  * @Author: Gatsby
  * @Date: 2021-04-08 10:32:44
- * @LastEditTime: 2021-04-08 16:12:12
+ * @LastEditTime: 2021-05-13 14:33:09
  * @LastEditors: Gatsby
  * @Description: 
  * @FilePath: \Bootstrap\layout\Bootstrap实例.html
@@ -15,25 +15,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="../css/thirdDependence/bootstrap.min.css">
-    <script src="../javascript/thirdDependence/jquery.min.js"></script>
-    <script src="../javascript/thirdDependence/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/business/Bootstrap实例.css">
     <title>Document</title>
 </head>
 <style>
-    .setHeight {
-        height: 600px;
-        overflow: hidden;
-        /* margin-top: 50px; */
-    }
-
-     .item > .img {
-        width: 100%;
-    }   
 </style>
 
 <body>
     <!-- 导航条 -->
-    <nav class="navbar navbar-inverse navbar-fixed-top ">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -94,7 +84,8 @@
     </nav>
 
     <!-- 轮播图 -->
-    <div id="carousel-example-generic" class="carousel slide setHeight" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide setHeight self-carousel" data-ride="carousel"
+        data-interval="1000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -148,6 +139,101 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <!-- content栅格布局 -->
+    <div class="container main-content-container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 self-thumbnail">
+                <img src="../img/chrome-logo-small.jpg" alt="...">
+                <div class="caption">
+                    <h3>Chrome</h3>
+                    <p>Google Chrome ,又称谷歌浏览器,是一个由谷歌公司开发的网页浏览器.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                            role="button">Button</a></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 self-thumbnail">
+                <img src="../img/firefox-logo-small.jpg" alt="...">
+                <div class="caption">
+                    <h3>Firefox</h3>
+                    <p>Mozilla Firefox，中文俗称“火狐”（正式缩写为Fx或fx），是一个由Mozilla开发的自由及开放源代码的网页浏览器.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                            role="button">Button</a></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 self-thumbnail">
+                <img src="../img/safari-logo-small.jpg" alt="...">
+                <div class="caption">
+                    <h3>Safari</h3>
+                    <p>Safari是一款由苹果开发的网页浏览器，是各类苹果设备（如Mac、iPhone、iPad、iPod Touch）的默认浏览器。Safari使用WebKit浏览器引擎.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                            role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hr-container">
+        <hr>
+    </div>
+
+    <!-- 标签页 -->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Chrome</a></li>
+            <li role="presentation"><a href="#">Firefox</a></li>
+            <li role="presentation"><a href="#">Safari</a></li>
+            <li role="presentation"><a href="#">Opera</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-panel active" id="chrome">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h3>Chrome</h3>
+                            <p>Google Chrome ,又称谷歌浏览器,是一个由谷歌公司开发的网页浏览器.</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="../img/chrome-logo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-panel active" id="chrome">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h3>Firefox</h3>
+                            <p>Mozilla Firefox，中文俗称“火狐”（正式缩写为Fx或fx），是一个由Mozilla开发的自由及开放源代码的网页浏览器.</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="../img/firefox-logo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-panel active" id="chrome">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h3>Safari</h3>
+                            <p>Safari是一款由苹果开发的网页浏览器，是各类苹果设备（如Mac、iPhone、iPad、iPod Touch）的默认浏览器。Safari使用WebKit浏览器引擎.</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="../img/safari-logo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 引入JS文件 -->
+    <script src="../javascript/thirdDependence/jquery.min.js"></script>
+    <script src="../javascript/thirdDependence/bootstrap.min.js"></script>
+    <script src="../javascript/business/Bootstrap实例.js"></script>
 </body>
 
 </html>
