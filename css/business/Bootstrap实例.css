@@ -22,7 +22,7 @@
   width: 100%;
 }
 .setHeight.self-carousel div.carousel-inner div.item div.carousel-caption {
-  bottom: 50%;
+  bottom: 51%;
 }
 @media only screen and (max-width: 768px) {
   .setHeight.self-carousel div.carousel-inner div.item div.carousel-caption {
@@ -50,4 +50,23 @@ div.container.main-content-container div.row div.col-lg-4.col-md-4.col-sm-4.self
 }
 div.container.hr-container {
   margin-top: 1%;
+}
+div.container.footer-container {
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  text-align: center;
+  color: #9d9d9d;
+}
+div#self-bookmarkPage.container div.tab-content div#Chrome.tab-pane.fade.in.active div.container-fluid div.row div.col-lg-5 img {
+  width: 100%;
+}
+div#self-bookmarkPage.container div.tab-content div#Firefox.tab-pane.fade div.container-fluid div.row div.col-lg-5 img {
+  width: 100%;
+}
+div#self-bookmarkPage.container div.tab-content div#Safari.tab-pane.fade div.container-fluid div.row div.col-lg-5 img {
+  width: 100%;
+}
+div#self-bookmarkPage.container div.tab-content div#IE.tab-pane.fade div.container-fluid div.row div.col-lg-5 img {
+  width: 100%;
 }
